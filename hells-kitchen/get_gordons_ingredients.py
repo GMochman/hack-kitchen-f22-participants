@@ -51,6 +51,13 @@ Explanation:
 # Dessert service starts in 30 minutes, so complete the function asap and don't disappoint Gordon!
 def get_ingredients(ingredients, budget):
     # Write your code here
+    tentativeCost = 0
+    for i in ingredients:
+        tentativeCost += i[1]
+    
+    if tentativeCost <= budget:
+        
+
     return ingredients
 
 if __name__ == '__main__':
